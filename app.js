@@ -482,6 +482,18 @@
 // }
 // }
 
+//                                    loop in
+
+let obj = {
+    s_name : "usama javed",
+    s_id :  "1159",
+    s_age :  "19",
+    s_roll : "7078",
+    s_course : "web and mob",
+}
+for (let key in obj){
+document.write(key," : ",obj[key], "</br>")
+}
 
 //                                    todo app
 
