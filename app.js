@@ -519,6 +519,43 @@
 
 
 
-function demo(){
-    document.getElementById('demo') .style.fontSize='35px'
-}
+// function demo(){
+//     document.getElementById('demo') .style.fontSize='35px'
+// }
+
+
+
+// let text = ""
+// let i = 0;
+
+// do {
+//   text += "<br>The number is " + i;
+//   i++;
+// }
+// while (i <=30);  
+
+// document.getElementById("demo").innerHTML = text;
+
+
+// let grade = 'A'
+
+// switch (grade){
+//   case 'A':
+//   console.log("A grade")
+  
+ 
+//   case 'B':
+//   console.log("B grade")
+  
+  
+
+//   case 'C':
+//   console.log("C grade")
+  
+
+//   default:
+//     console.log("bharose wala")
+// }
+
+// let currentDate = new Date ("november 21 ,2023");
+// console.log(currentDate);
