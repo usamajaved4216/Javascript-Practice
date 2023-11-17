@@ -484,16 +484,16 @@
 
 //                                    loop in
 
-let obj = {
-    s_name : "usama javed",
-    s_id :  "1159",
-    s_age :  "19",
-    s_roll : "7078",
-    s_course : "web and mob",
-}
-for (let key in obj){
-document.write(key," : ",obj[key], "</br>")
-}
+// let obj = {
+//     s_name : "usama javed",
+//     s_id :  "1159",
+//     s_age :  "19",
+//     s_roll : "7078",
+//     s_course : "web and mob",
+// }
+// for (let key in obj){
+// document.write(key," : ",obj[key], "</br>")
+// }
 
 //                                    todo app
 
@@ -571,3 +571,60 @@ document.write(key," : ",obj[key], "</br>")
 
 // let currentDate = new Date ("november 21 ,2023");
 // console.log(currentDate);
+
+
+// let currentDate = new Date();
+// let days = ['sun', 'mon', 'tues', 'wed', 'thur', 'fri', 'sat']
+// console.log(days[currentDate])
+
+// let text =document.getElementById("ul")
+
+// function todofun(){
+//     let inp = document.getElementById("input");
+//     let getli = document.createElement("li");
+//     let liText = document.createTextNode(inp.value)
+//     getli.appendChild(liText)
+//     text.appendChild(getli)
+    
+//     inp.value=""
+//     let deltBtn = document.createElement("button")
+//     let deltText = document.createTextNode("Delete")
+//     deltBtn.appendChild(deltText)
+//     getli.appendChild(deltBtn)
+//     deltBtn.setAttribute("onclick","deltfun(this)")
+
+//     let editbtn = document.createElement("button")
+//     let editbtntext = document.createTextNode("Edit")
+//     editbtn.appendChild(editbtntext)
+//     getli.appendChild(editbtn)
+//     editbtn.setAttribute("onclick","editfun(this)")
+
+// }
+// function deltfun(d){
+//     d.parentNode.remove()
+// }
+// function editfun(e){
+//     let a = prompt("Enter value",e.parentNode.firstChild.nodeValue)
+//     e.parentNode.firstChild.nodeValue=a
+// }
+
+
+// const img = document.querySelector('img')
+// const para = document.querySelector('p')
+// function toss(clicked) {
+//     let roundNumber = Math.floor(Math.random() * 2);
+//     console.log(roundNumber);
+//     if (clicked === 'masjid' && roundNumber === 0 || clicked === 'chand' && roundNumber === 1) {
+//         console.log(clicked, 'toss jeet gaye');
+//         para.innerHTML = 'toss jeet gaye'
+//     } else {
+//         console.log('toss haar gaye');
+//         para.innerHTML = 'Program warr gaya'
+//     }
+//     if (roundNumber === 1){
+//         img.src = './chand.jpg'
+//     }else{
+//         img.src = './masjid.jpg'
+//     }
+// }
+
