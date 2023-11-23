@@ -1,0 +1,63 @@
+.abc{
+border: 2px solid black;
+width: 300px;
+padding: 0px 0px 20px 0px;
+margin: 50px 0px 0px 0px;
+background: #135350;
+border-radius: 10px;
+}
+#inp{
+    width: 250px;
+    height: 40px;
+    border: 2px solid rgb(53, 6, 6);
+    cursor: pointer;
+    margin-left: 8px;
+    margin-top: 8px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(64, 10, 10);
+    background: #eaedf186;
+    border-radius: 10px;
+}
+
+.a{
+    width: 50px;
+    height: 45px;
+    border: 2px solid rgb(53, 6, 6);
+    cursor: pointer;
+    margin-left: 8px;
+    margin-top: 8px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(64, 10, 10);
+    background:  #2e8cf186;
+    border-radius: 10px;
+}
+.ab{
+    
+    width: 113px;
+    height: 45px;
+    border: 2px solid rgb(53, 6, 6);
+    cursor: pointer;
+    margin-left: 8px;
+    margin-top: 8px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(64, 10, 10);
+    background:  #2ef1ad86;
+    border-radius: 10px;
+}
+.usama{
+    
+    width: 113px;
+    height: 45px;
+    border: 2px solid rgb(53, 6, 6);
+    cursor: pointer;
+    margin-left: 8px;
+    margin-top: 8px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(64, 10, 10);
+    background: #2ef1ad86;
+    border-radius: 10px;
+}

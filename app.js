@@ -135,7 +135,7 @@
 // else{
 //     console.log('aloo lelo');
 // }
- 
+
 
 // const wiket = 4
 //  if(wiket > 6) {
@@ -184,7 +184,7 @@
 
 
 
- //*--- Variable for strings---*/
+//*--- Variable for strings---*/
 
 
 // Qeustion 1
@@ -211,7 +211,7 @@
 
 // let bio = 'Students biodata'
 // alert(bio);
-  
+
 // let nam = 'Usama Javed'
 // alert(nam)
 
@@ -304,7 +304,7 @@
 
 // Question 4 
 
- 
+
 // let Name = 'usama'
 // let quantity = 7
 // let product= 'Cargo(L)'
@@ -426,8 +426,8 @@
 //     if(i === userinp0){
 //         document.write(string.length-1)
 //     }
-                                                      
-    
+
+
 // }
 
 // var i;
@@ -458,7 +458,7 @@
 // var match = false
 // for (var i=0; i < arr.length; i++){
 //     if(userInp == arr[i]){
-   
+
 //     match = true
 //     alert("city found")
 //     break
@@ -494,6 +494,9 @@
 // for (let key in obj){
 // document.write(key," : ",obj[key], "</br>")
 // }
+
+
+
 
 //                                    todo app
 
@@ -554,16 +557,16 @@
 // switch (grade){
 //   case 'A':
 //   console.log("A grade")
-  
- 
+
+
 //   case 'B':
 //   console.log("B grade")
-  
-  
+
+
 
 //   case 'C':
 //   console.log("C grade")
-  
+
 
 //   default:
 //     console.log("bharose wala")
@@ -585,7 +588,7 @@
 //     let liText = document.createTextNode(inp.value)
 //     getli.appendChild(liText)
 //     text.appendChild(getli)
-    
+
 //     inp.value=""
 //     let deltBtn = document.createElement("button")
 //     let deltText = document.createTextNode("Delete")
@@ -628,3 +631,81 @@
 //     }
 // }
 
+
+
+
+
+// let complexObject = {
+//     person: {
+//         name: {
+//             first: "John",
+//             last: "Doe",
+//         },
+//         age: 30,
+//         address: {
+//             street: {
+//                 number: 123,
+//                 name: "Nested Street",
+//             },
+//             city: "Nested City",
+//             country: "Nested Country",
+//         },
+//     },
+//     work: {
+//         company: {
+//             name: "TechCorp",
+//             location: {
+//                 city: "TechCity",
+//                 country: "TechCountry",
+//             },
+//         },
+//         position: "Senior Developer",
+//         projects: [
+//             {
+//                 name: "Project A",
+//                 technologies: ["JavaScript", "React", "Node.js"],
+//             },
+//             {
+//                 name: "Project B",
+//                 technologies: ["Python", "Django",["new", ["PostgreSQL"]]],
+
+//             },
+//         ],
+//     },
+//     hobbies: {
+//         indoor: ["Reading", "Chess"],
+//         outdoor: ["Hiking", "Cycling"],
+//     },
+// };
+//  console.log(complexObject.work.company.location.country);
+
+function func(e) {
+    document.getElementById("inp").value += e
+}
+function eq() {
+    let a = document.getElementById("inp")
+    a.value = eval(a.value)
+}
+function dltall() {
+    document.getElementById('inp').value = ' '
+}
+function dlt() {
+
+    let currentDisplay = document.getElementById('inp').value;
+    document.getElementById('inp')
+        .value = currentDisplay.slice(0, -1);
+}
+
+// let btn = document.querySelector('#hii')
+// btn.addEventListener('click',function(){
+//     console.log('show console');
+// })
+
+// let form = document.getElementById("form")
+// let input = document.getElementById("inp")
+
+// form.addEventListener('sumbit',function(event){
+//     event.preventDefault();
+//     console.log(input.value);
+//     input.value=""
+// })
