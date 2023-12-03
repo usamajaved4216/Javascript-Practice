@@ -679,33 +679,214 @@
 // };
 //  console.log(complexObject.work.company.location.country);
 
-function func(e) {
-    document.getElementById("inp").value += e
-}
-function eq() {
-    let a = document.getElementById("inp")
-    a.value = eval(a.value)
-}
-function dltall() {
-    document.getElementById('inp').value = ' '
-}
-function dlt() {
+//                     calculator
 
-    let currentDisplay = document.getElementById('inp').value;
-    document.getElementById('inp')
-        .value = currentDisplay.slice(0, -1);
-}
+// function func(e) {
+//     document.getElementById("inp").value += e
+// }
+// function eq() {
+//     let a = document.getElementById("inp")
+//     a.value = eval(a.value)
+// }
+// function dltall() {
+//     document.getElementById('inp').value = ' '
+// }
+// function dlt() {
 
-// let btn = document.querySelector('#hii')
-// btn.addEventListener('click',function(){
-//     console.log('show console');
-// })
+//     let currentDisplay = document.getElementById('inp').value;
+//     document.getElementById('inp')
+//         .value = currentDisplay.slice(0, -1);
+// }
+
 
 // let form = document.getElementById("form")
 // let input = document.getElementById("inp")
 
-// form.addEventListener('sumbit',function(event){
+// form.addEventListener("submit",function(event){
 //     event.preventDefault();
 //     console.log(input.value);
-//     input.value=""
+//     input.value= ""
+// } )
+
+
+// let input = document.getElementById("inp")
+//         const Button = document.getElementById('btn');
+
+   
+//         btn.addEventListener('submit', function(event) {
+//             event.preventDefault();
+//             console.log(input.value);
+//                 input.value= ""
+//         });
+
+
+//                                 api
+
+
+// axios.get('https://fakestoreapi.com/products')
+// .then((res)=>{
+//     console.log(res.data);
 // })
+// .catch((err)=>{
+//     console.log(err);
+// })
+
+// const abc= document.getElementsByClassName('abc')
+// for( let i = 0; i<res.data.length; i++){
+//     abc.innerHTML += `
+//     <div>
+    
+// <img width=' 100px ' src=`${res.data[i].image}` alt="">
+//     </div>
+//     `
+// }
+
+
+
+
+
+
+
+// Question-1
+
+// function greet(name) {
+//     console.log("Hello, " + name + "!");
+//   }
+  
+//   greet("Alice");
+//   greet("Bob");
+//   greet("Charlie");
+  
+
+// Question-2
+
+// function displayCurrentDateTime() {
+//     const currentDateTime = new Date();
+  
+//     const formattedDateTime = currentDateTime.toLocaleString();
+  
+//     alert("Current Date & Time: " + formattedDateTime);
+//   }
+  
+//   displayCurrentDateTime();
+
+// Question-3
+
+// function greetUser(firstName, lastName) {
+  
+//     const fullName = firstName + " " + lastName;
+
+//     console.log("Hello, " + fullName + "! Welcome!");
+//   }
+  
+//   greetUser("John", "Doe");
+
+// question 4
+
+// function addTwoNumbers() {
+    
+//     let num1 = parseFloat(prompt("Enter the first number:"));
+//     let num2 = parseFloat(prompt("Enter the second number:"));
+  
+//     let sum = num1 + num2;
+//     return sum;
+//   }
+  
+//   let result = addTwoNumbers();
+//   console.log("The sum of the two numbers is:", result);
+
+// qustion 19  
+// function isPalindrome(inputString) {
+    
+//     let cleanString = inputString.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();   
+//     let reversedString = cleanString.split('').reverse().join('');
+//        return cleanString === reversedString;
+// }
+// let testString = "maham";
+// if (isPalindrome(testString)) {
+//     console.log(`${testString} is a palindrome.`);
+// } else {
+//     console.log(`${testString} is not a palindrome.`);
+// }
+
+//  quwstion 18
+// function reverseNumber(number) {
+    
+//     let reversedString = number.toString().split('').reverse().join('');   
+//     let reversedNumber = parseInt(reversedString);
+//     return reversedNumber;
+// }
+// let x = 3224783;
+// let reversedX = reverseNumber(x);
+// console.log(`Original number: ${x}`);
+// console.log(`Reversed number: ${reversedX}`);
+
+
+// question 17
+// function rollDice() {
+//        return Math.floor(Math.random() * 6) + 1;
+// }
+// let diceResult = rollDice();
+// console.log(`The dice rolled: ${diceResult}`);
+ 
+
+
+// // question16
+// function computePower(base, exponent) {
+//     let result = Math.pow(base, exponent);
+//     return result;
+// }
+// let baseNumber = 2;
+// let exponentNumber = 4;
+// let result = computePower(baseNumber, exponentNumber);
+// console.log(`${baseNumber}^${exponentNumber} is ${result}`);
+
+
+//  // question15
+// var abc = function inner() { 
+//     return typeof inner; 
+// }
+// alert(abc());
+
+// question 14
+// function sumArrayElements(numbers) {    
+//     let sum = numbers.reduce((acc, current) => acc + current, 0);
+//     return sum;
+// }
+// let numbersArray = [1, 2, 3, 4, 5];
+// let result = sumArrayElements(numbersArray);
+// console.log(`The sum of the array elements is: ${result}`);
+
+
+// question 13 
+// function sumArrayElements(numbers) {
+// let sum = numbers.reduce((acc, current) => acc + current, 0);
+//     return sum;
+// }
+
+
+
+
+
+
+const email = document.querySelector('#email');
+const password = document.querySelector('#password');
+const form = document.querySelector('#form');
+
+
+form.addEventListener('submit' , (event)=>{
+    event.preventDefault();
+    // console.log(email.value);
+    // console.log(password.value);
+    const obj = {
+        email:email.value,
+        password:password.value
+    }
+    // console.log(obj);
+    const strObj = JSON.stringify(obj);
+    localStorage.setItem('userDetail' , strObj)
+    email.value = ''
+    password.value = ''
+    window.location = 'home.html'
+    // console.log(window.location);
+})
