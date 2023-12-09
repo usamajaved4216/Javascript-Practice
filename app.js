@@ -869,24 +869,37 @@
 
 
 
-const email = document.querySelector('#email');
-const password = document.querySelector('#password');
-const form = document.querySelector('#form');
+// const email = document.querySelector('#email');
+// const password = document.querySelector('#password');
+// const form = document.querySelector('#form');
 
 
-form.addEventListener('submit' , (event)=>{
-    event.preventDefault();
-    // console.log(email.value);
-    // console.log(password.value);
-    const obj = {
-        email:email.value,
-        password:password.value
-    }
-    // console.log(obj);
-    const strObj = JSON.stringify(obj);
-    localStorage.setItem('userDetail' , strObj)
-    email.value = ''
-    password.value = ''
-    window.location = 'home.html'
-    // console.log(window.location);
-})
+// form.addEventListener('submit' , (event)=>{
+//     event.preventDefault();
+//     // console.log(email.value);
+//     // console.log(password.value);
+//     const obj = {
+//         email:email.value,
+//         password:password.value
+//     }
+//     // console.log(obj);
+//     const strObj = JSON.stringify(obj);
+//     localStorage.setItem('userDetail' , strObj)
+//     email.value = ''
+//     password.value = ''
+//     window.location = 'home.html'
+//     // console.log(window.location);
+// })
+
+
+
+
+
+// const obj ={
+//     name: "usama javed",
+//     age: "19",
+// }
+// console.log(obj["name"]);
+// for (const key in obj ) {
+//     console.log(`$[key] : ${obj[key]}`);
+// }
